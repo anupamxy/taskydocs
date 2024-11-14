@@ -1,147 +1,110 @@
-/* Root */
-:root {
-  --bg-light: #f9f9f9;
-  --bg-dark: #121212;
-  --text-light: #333;
-  --text-dark: #e0e0e0;
-  --primary: #6200ea;
-  --secondary: #03dac5;
+/* App-wide styling */
+body {
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Base Styles */
+body.light {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+body.dark {
+  background-color: #172842;
+  color: #ffffff;
+}
+
 .app-container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   padding: 2rem;
-  transition: background-color 0.3s ease;
 }
 
-.light {
-  background-color: var(--bg-light);
-  color: var(--text-light);
-}
-
-.dark {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
-
-/* Header */
 .header {
   width: 100%;
-  max-width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background: var(--primary);
-  color: white;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.header h1 {
+.title {
   font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .theme-toggle {
-  padding: 0.5rem 1rem;
+  background: none;
   border: none;
-  background: var(--secondary);
-  color: #fff;
-  border-radius: 6px;
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: color 0.3s;
 }
 
-.theme-toggle:hover {
-  background: #018786;
+body.light .theme-toggle {
+  color: #172842;
 }
 
-/* Main Content */
-.main-content {
+body.dark .theme-toggle {
+  color: #f4f6f8;
+}
+
+.todo-container {
   width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-/* Task Container */
-.task-container {
-  width: 100%;
-  max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.05);
+  max-width: 640px;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Task Sections */
 section {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 section h2 {
   font-size: 1.25rem;
-  font-weight: bold;
-  color: var(--primary);
+  margin-bottom: 1rem;
 }
 
-/* Task Lists */
-.task-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* Todo Item */
-.todo-item {
+.todo-container section div {
   padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  background-color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.todo-container input, .todo-container select, .todo-container textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.todo-container button {
+  background-color: #5b9bd5;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.todo-item.completed {
-  background-color: #34a853;
+.todo-container button:hover {
+  background-color: #4a8ccc;
 }
 
-.todo-item:hover {
-  background-color: #3700b3;
-}
-
-/* Search Bar */
-.search-bar {
-  width: 100%;
-  max-width: 800px;
-  padding: 0.75rem;
-  border-radius: 8px;
-  background-color: var(--bg-light);
-  border: 1px solid #ccc;
-}
-
-.search-bar input {
-  width: calc(100% - 80px);
-  padding: 0.5rem;
-  border: none;
-  border-radius: 6px;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
-  .main-content, .task-container {
+  .app-container {
     padding: 1rem;
   }
-
-  .header h1 {
-    font-size: 1.5rem;
+  .header {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
