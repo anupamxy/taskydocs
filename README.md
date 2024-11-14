@@ -2,9 +2,9 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
 
 ---
 
-# **Taskify - Task Manager App**
+# **Taskydocs - Task Manager App**
 
-**Taskify** is a task management application that helps you organize and keep track of your tasks. The app allows users to create, edit, delete, and complete tasks. It also features a search bar to filter tasks, theme switching (light/dark), and responsive design.
+**Taskydocs** is a task management application that helps you organize and keep track of your tasks. The app allows users to create, edit, delete, and complete tasks. It also features a search bar to filter tasks, theme switching (light/dark), and responsive design.
 
 ## **Features:**
 
@@ -14,7 +14,7 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   - Edit or delete tasks as needed.
   - Tasks can be marked as completed, and their status can be updated.
   
-  ![Task Management](https://github.com/user-attachments/assets/922bf04f-7a14-4877-9de8-ac319a2fe4be) ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d) ![image](https://github.com/user-attachments/assets/587fade5-edbd-4dc9-90d4-32abcfb0e70d)
+  ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d) ![image](https://github.com/user-attachments/assets/587fade5-edbd-4dc9-90d4-32abcfb0e70d)
 
 
   
@@ -25,6 +25,7 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   - Assign priority levels to each task (High, Medium, Low).
   
   ![Set Priorities](link-to-priority-image.png)  <!-- Add your image link here -->
+  ![Task Management](https://github.com/user-attachments/assets/922bf04f-7a14-4877-9de8-ac319a2fe4be)
 
 - **Due Dates**: 
   - Assign due dates to tasks, and view tasks based on their due dates (Upcoming, Overdue, Completed).
@@ -55,7 +56,7 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
 ## **Tech Stack:**
 - **Frontend**: React, CSS
 - **State Management**: Context API
-- **Icons**: React Icons (`FaSun`, `FaMoon`)
+- **Icons**: React Icons.
 - **Local Storage**: Stores tasks locally on the user's device
 
 ## **Installation Instructions:**
@@ -134,9 +135,6 @@ npm start
 5. Push to the branch (`git push origin feature-name`).
 6. Create a pull request.
 
-## **License:**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## **Acknowledgments:**
 
@@ -144,6 +142,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - React Icons for providing the sun/moon icons for theme switching.
 - Local Storage API for persisting tasks.
 
----
-
-With this updated `README.md`, you now have placeholders for images for each feature. Simply replace the `link-to-feature-image.png` placeholders with your actual image URLs.
