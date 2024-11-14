@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import React, { useEffect, useState } from "react";
 import Search from "./components/search/Search";
 import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
-
 import { TodoProvider } from "./context";
+import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => setIsDarkMode(!isDarkMode);
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
@@ -34,11 +36,8 @@ function App() {
   };
 
   useEffect(() => {
-    const todos = JSON.parse(localStorage.getItem("todos"));
-
-    if (todos && todos.length > 0) {
-      setTodos(todos);
-    }
+    const savedTodos = JSON.parse(localStorage.getItem("todos"));
+    if (savedTodos) setTodos(savedTodos);
   }, []);
 
   useEffect(() => {
@@ -59,31 +58,45 @@ function App() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div className="bg-[#172842] min-h-screen py-8">
-        <Search todos = {todos}/>      
-        <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-          <h1 className="text-2xl font-bold text-center">Taskify</h1>
-          <TodoForm />
+      <div className={`app-container ${isDarkMode ? 'dark' : 'light'}`}>
+        <header className="header">
+          <h1>Taskify</h1>
+          <button onClick={toggleTheme} className="theme-toggle">
+            {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          </button>
+        </header>
 
-          <h2>Upcoming Tasks</h2>
-          <div className="space-y-4">
-            {getFilteredTodos("upcoming").map((todo) => (
-              <TodoItem key={todo.id} todo={todo} />
-            ))}
-          </div>
+        <div className="main-content">
+          <Search todos={todos} />
+          <div className="task-container">
+            <TodoForm />
+            
+            <section>
+              <h2>Upcoming Tasks</h2>
+              <div className="task-list">
+                {getFilteredTodos("upcoming").map((todo) => (
+                  <TodoItem key={todo.id} todo={todo} />
+                ))}
+              </div>
+            </section>
 
-          <h2>Overdue Tasks</h2>
-          <div className="space-y-4">
-            {getFilteredTodos("overdue").map((todo) => (
-              <TodoItem key={todo.id} todo={todo} />
-            ))}
-          </div>
+            <section>
+              <h2>Overdue Tasks</h2>
+              <div className="task-list">
+                {getFilteredTodos("overdue").map((todo) => (
+                  <TodoItem key={todo.id} todo={todo} />
+                ))}
+              </div>
+            </section>
 
-          <h2>Completed Tasks</h2>
-          <div className="space-y-4">
-            {getFilteredTodos("completed").map((todo) => (
-              <TodoItem key={todo.id} todo={todo} />
-            ))}
+            <section>
+              <h2>Completed Tasks</h2>
+              <div className="task-list">
+                {getFilteredTodos("completed").map((todo) => (
+                  <TodoItem key={todo.id} todo={todo} />
+                ))}
+              </div>
+            </section>
           </div>
         </div>
       </div>

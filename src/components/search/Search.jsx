@@ -5,13 +5,13 @@ import './Search.css';
 const Search = ({ todos }) => {
   const [query, setQuery] = useState('');
   const [searchedResults, setSearchedResults] = useState([]);
-  const [searchedPriority, setSearchedPriority] = useState([]);
+  const [searchedPriority, setSearchedPriority] = useState('');
 
   const handlePriority = (event) => {
     const value = event.target.value;
     setSearchedPriority(value);
 
-    // Filter todos where the "priority" matches the selected priority
+    // Filter todos by priority
     const results = todos.filter(
       (task) =>
         task.priority &&
@@ -25,17 +25,15 @@ const Search = ({ todos }) => {
     const value = event.target.value;
     setQuery(value);
 
-    // Show all tasks if query is empty
     if (value.length === 0) {
       setSearchedResults([]);
       return;
     }
 
-    // Filter todos where the "title" includes the query string
+    // Filter todos by title
     const results = todos.filter(
       (task) =>
         task.title &&
-        typeof task.title === 'string' &&
         task.title.toLowerCase().includes(value.toLowerCase())
     );
     setSearchedResults(results);
@@ -43,12 +41,9 @@ const Search = ({ todos }) => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-
-    // Filter todos where the "title" includes the query string
     const results = todos.filter(
       (task) =>
         task.title &&
-        typeof task.title === 'string' &&
         query.length > 0 &&
         task.title.toLowerCase().includes(query.toLowerCase())
     );
@@ -58,26 +53,30 @@ const Search = ({ todos }) => {
   return (
     <>
       <form onSubmit={handleSearch} className="search-form">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search the task title"
-          value={query}
-          onChange={handleInputChange}
-        />
-        <button type="submit" className="search-button">Search</button>
-
-        {/* Priority filter dropdown */}
-        <select onChange={handlePriority} className="priority-select">
-          <option value="">Filter by Priority</option>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="High">High</option>
-        </select>
+        <div className="search-container">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search by task title"
+            value={query}
+            onChange={handleInputChange}
+          />
+          <button type="submit" className="search-button">Search</button>
+          <select
+            onChange={handlePriority}
+            className="priority-select"
+            value={searchedPriority}
+          >
+            <option value="">Filter by Priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
       </form>
 
       {/* Display search results */}
-      <div className="search-results">
+      <div className="search-results mt-6">
         {searchedResults.length > 0 ? (
           <ul>
             {searchedResults.map((todo, index) => (
