@@ -99,16 +99,13 @@ npm start
 
 ## **Contributing:**
 
-1. Fork this repository.
-2. Clone your forked repository.
+1. Created my new repo
+2. Added readme and basic templeate feature
 3. Create a new branch (`git checkout -b feature-name`).
 4. Make changes and commit them (`git commit -am 'Add new feature'`).
 5. Push to the branch (`git push origin feature-name`).
 6. Create a pull request.
 
-## **License:**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## **Acknowledgments:**
 
