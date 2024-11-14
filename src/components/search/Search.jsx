@@ -61,13 +61,13 @@ const Search = ({ todos }) => {
             value={query}
             onChange={handleInputChange}
           />
-          <button type="submit" className="search-button">Search</button>
+          <button type="submit" className="search-button">Search Options</button>
           <select
             onChange={handlePriority}
             className="priority-select"
             value={searchedPriority}
           >
-            <option value="">Filter by Priority</option>
+            <option value="">Priority</option>
             <option value="Low">Low</option>
             <option value="Medium">Medium</option>
             <option value="High">High</option>

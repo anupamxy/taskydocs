@@ -35,9 +35,9 @@ function TodoForm() {
         onSubmit={add}
         className="flex flex-col gap-6 max-w-lg w-full mx-auto p-6 rounded-xl shadow-xl border border-transparent transition-all duration-300 ease-in-out hover:shadow-2xl hover:border-indigo-500 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black"
       >
-        {/* Title and Light/Dark Mode Toggle */}
+     
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-white text-lg font-semibold">Create Task</h2>
+          <h2 className="text-white text-lg font-semibold">Add Your Task</h2>
           <button
             type="button"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -47,7 +47,7 @@ function TodoForm() {
           </button>
         </div>
 
-        {/* Title Input */}
+     
         <input
           type="text"
           placeholder="Task Title"
@@ -56,7 +56,7 @@ function TodoForm() {
           onChange={(e) => setTitle(e.target.value)}
         />
 
-        {/* Description Textarea */}
+      
         <textarea
           placeholder="Task Description"
           className="w-full border border-transparent rounded-lg px-4 py-3 bg-zinc-900 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 transition-all duration-200 ease-in-out shadow-md hover:shadow-lg"
@@ -64,7 +64,7 @@ function TodoForm() {
           onChange={(e) => setDescription(e.target.value)}
         />
 
-        {/* Due Date Input */}
+    
         <input
           type="date"
           className="w-full border border-transparent rounded-lg px-4 py-3 bg-zinc-900 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 transition-all duration-200 ease-in-out shadow-md hover:shadow-lg"
@@ -72,7 +72,7 @@ function TodoForm() {
           onChange={(e) => setDueDate(e.target.value)}
         />
 
-        {/* Priority Dropdown */}
+      
         <select
           value={priority}
           onChange={(e) => setPriority(e.target.value)}
@@ -83,7 +83,7 @@ function TodoForm() {
           <option value="Low">Low</option>
         </select>
 
-        {/* Submit Button */}
+     
         <button
           type="submit"
           className="mt-6 w-full rounded-lg px-4 py-2 bg-gradient-to-r from-green-400 to-teal-500 text-white font-semibold text-lg focus:outline-none focus:ring-4 focus:ring-green-300 hover:scale-105 transition-all duration-300 ease-in-out transform hover:bg-green-600 dark:focus:ring-green-500"

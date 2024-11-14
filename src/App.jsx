@@ -8,8 +8,8 @@ import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
-  const [theme, setTheme] = useState("light");
-  const [searchedTodo, setSearchedTodo] = useState(null); // New state for searched item
+  const [theme, setTheme] = useState("dark");
+  const [searchedTodo, setSearchedTodo] = useState(null); 
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
@@ -49,7 +49,7 @@ function App() {
   }, [todos]);
 
   useEffect(() => {
-    document.body.className = theme;  // Update body class for theme
+    document.body.className = theme;  
   }, [theme]);
 
   const getFilteredTodos = (status) => {
@@ -66,16 +66,16 @@ function App() {
     <TodoProvider value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}>
       <div className={`app-container ${theme}`}>
         <header className="header">
-          <h1 className="title">Taskify</h1>
+          <h1 className="title">TaskyDocs</h1>
           <button onClick={toggleTheme} className="theme-toggle">
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
         </header>
-        <Search todos={todos} setSearchedTodo={setSearchedTodo} /> {/* Pass setSearchedTodo */}
+        <Search todos={todos} setSearchedTodo={setSearchedTodo} /> 
         <div className="todo-container">
           <TodoForm />
           
-          {/* Render the searched item in the center with a transition */}
+         
           {searchedTodo && (
             <div className="searched-todo-container">
               <TodoItem todo={searchedTodo} />
