@@ -1,39 +1,14 @@
-/* Search Form Styling */
-.search-form {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(45deg, #6200ea, #03a9f4, #ff9800); /* Initial gradient */
-  background-size: 400% 400%; /* To make the gradient larger for animation */
-  animation: gradientAnimation 10s ease infinite; /* Animation for background */
-  border-radius: 12px;
-}
+/* App.css */
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Container to hold search input, button, and priority select */
+/* Ensures proper spacing and layout for search input, button, and filter */
 .search-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 20px; /* Adds space between the search input, button, and filter */
   justify-content: center;
   width: 100%;
   max-width: 800px;
+  margin-bottom: 20px; /* Space below the container */
 }
 
 /* Search input field */
@@ -44,11 +19,13 @@
   border: 2px solid #ddd;
   border-radius: 12px;
   outline: none;
+  background-color: #fff;
+  color: #000;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: #f7f7f7;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* When the search input is focused */
 .search-input:focus {
   border-color: #6200ea;
   box-shadow: 0 0 5px rgba(98, 0, 234, 0.4);
@@ -65,6 +42,7 @@
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 10px; /* Space between search input and button */
 }
 
 .search-button:hover {
@@ -86,44 +64,18 @@
   cursor: pointer;
   outline: none;
   transition: border-color 0.3s ease;
+  margin-left: 10px; /* Space between search button and filter */
 }
 
 .priority-select:focus {
   border-color: #6200ea;
 }
 
-/* Display search results */
-.search-results {
-  margin-top: 30px;
-  width: 100%;
-}
-
-.search-result-item {
-  padding: 15px;
-  background-color: #f4f4f4;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.search-result-item:hover {
-  background-color: #e3e3e3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* No Results */
-.no-results {
-  text-align: center;
-  font-size: 16px;
-  color: #999;
-}
-
-/* Media Queries for Mobile */
+/* Mobile responsiveness */
 @media (max-width: 640px) {
   .search-container {
     flex-direction: column;
-    gap: 12px;
+    gap: 12px; /* Smaller gap for mobile */
     padding: 10px;
   }
 
@@ -131,6 +83,7 @@
   .search-button,
   .priority-select {
     font-size: 14px;
+    width: 100%; /* Make the components full-width on mobile */
   }
 
   .search-button {

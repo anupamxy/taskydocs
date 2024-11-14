@@ -9,6 +9,7 @@ import "./App.css";
 function App() {
   const [todos, setTodos] = useState([]);
   const [theme, setTheme] = useState("light");
+  const [searchedTodo, setSearchedTodo] = useState(null); // New state for searched item
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
@@ -70,9 +71,17 @@ function App() {
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
         </header>
-        <Search todos={todos} />
+        <Search todos={todos} setSearchedTodo={setSearchedTodo} /> {/* Pass setSearchedTodo */}
         <div className="todo-container">
           <TodoForm />
+          
+          {/* Render the searched item in the center with a transition */}
+          {searchedTodo && (
+            <div className="searched-todo-container">
+              <TodoItem todo={searchedTodo} />
+            </div>
+          )}
+          
           <section>
             <h2>Upcoming Tasks</h2>
             {getFilteredTodos("upcoming").map((todo) => (

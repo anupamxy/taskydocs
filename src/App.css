@@ -1,6 +1,13 @@
 /* App-wide styling */
 body {
+  
   transition: background-color 0.3s, color 0.3s;
+}
+/* App.css */
+
+/* Ensures that the text color is always black for todo items */
+.todo-item {
+  color: #000 !important; /* Force black text color */
 }
 
 body.light {
@@ -87,7 +94,6 @@ section h2 {
 
 .todo-container button {
   background-color: #5b9bd5;
-  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -107,4 +113,19 @@ section h2 {
     flex-direction: column;
     gap: 1rem;
   }
+}
+/* Styles for centering the searched todo item */
+.searched-todo-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
+  opacity: 1;
+}
+
+.searched-todo-container.hide {
+  opacity: 0;
+  transform: translate(-50%, -60%);
 }
