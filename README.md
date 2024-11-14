@@ -14,7 +14,8 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   - Edit or delete tasks as needed.
   - Tasks can be marked as completed, and their status can be updated.
   
-  ![Task Management](link-to-task-management-image.png)  <!-- Add your image link here -->
+  ![Task Management](![image](https://github.com/user-attachments/assets/5694e554-1a38-4575-8a34-d2b53c02f138)
+)  <!-- Add your image link here -->
 
 - **Set Priorities**: 
   - Assign priority levels to each task (High, Medium, Low).
