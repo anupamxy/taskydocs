@@ -1,65 +1,122 @@
-Taskify - Task Management App
+Here’s a detailed `README.md` for your project, which is a **Task Manager App** that supports themes, search functionality, and task management features:
 
-Taskify is a sleek, intuitive task management app built with React and Vite. It enables users to effortlessly create, edit, delete, search, and filter tasks based on priority levels. With an organized structure and a user-friendly interface, Taskify makes it easy to manage daily tasks and improve productivity.
+---
 
-Features
-Create, Edit, Delete Tasks: Add new tasks, update existing ones, or remove tasks as needed.
-Priority Categorization: Assign priority levels to tasks (Low, Medium, High) and filter tasks based on priority.
-Search Functionality: Quickly locate tasks by title with a real-time search bar.
-Priority Filter: Filter tasks based on priority levels using a dropdown (Low, Medium, High).
-Responsive Design: A well-designed interface that’s easy to navigate on both desktop and mobile devices.
+# **Taskify - Task Manager App**
 
-Project Structure
+**Taskify** is a task management application that helps you organize and keep track of your tasks. The app allows users to create, edit, delete, and complete tasks. It also features a search bar to filter tasks, theme switching (light/dark), and responsive design.
 
-![image](https://github.com/user-attachments/assets/fa92b6c2-9ed4-4a16-bc68-067946953623)
-
-
-Tech Stack
-React with Vite for a fast and efficient development experience
-Context API for state management, providing a consistent task management experience
-CSS Modules for scoped, maintainable styling
-
-Getting Started
-Prerequisites
-Ensure you have Node.js installed, along with npm or yarn.
-
-Installation
-
-1.
-  git clone https://github.com/yourusername/taskify.git
+## **Features:**
+- **Task Management**:
+  - Add, edit, and delete tasks
+  - Mark tasks as completed or incomplete
+  - Set priorities for tasks (High, Medium, Low)
+  - Set due dates for tasks
+  - View tasks by status (Upcoming, Overdue, Completed)
   
-  cd taskify 
+- **Search Functionality**:
+  - Search tasks by title or description
+  - Highlight searched task with smooth transition animation
+  
+- **Theme Toggle**:
+  - Switch between light and dark themes with a sun/moon icon
 
-3. 
-   npm install
+- **Responsive Design**:
+  - Fully responsive design that works on mobile, tablet, and desktop devices
 
-4. 
-   npm run dev
+## **Tech Stack:**
+- **Frontend**: React, CSS
+- **State Management**: Context API
+- **Icons**: React Icons (`FaSun`, `FaMoon`)
+- **Local Storage**: Stores tasks locally on the user's device
 
-Usage
-Add Tasks: Use the form to create tasks with titles, descriptions, and assign priority levels.
-Edit or Delete Tasks: Click on a task to edit or remove it as needed.
-Search Tasks: Enter keywords in the search bar to locate tasks by title.
-Filter by Priority: Use the priority dropdown to filter tasks and focus on high, medium, or low-priority items.
+## **Installation Instructions:**
 
-Contributing
-We welcome contributions to Taskify! If you have suggestions, bug reports, or want to add new features, please open an issue or submit a pull request.
+1. Clone the repository to your local machine:
 
+```bash
+git clone https://github.com/your-username/taskify.git
+cd taskify
+```
 
-Screenshots:
+2. Install the dependencies using npm:
 
-The main page:
+```bash
+npm install
+```
 
-![image](https://github.com/user-attachments/assets/bd666bb2-201f-48c5-b834-e050903739b6)
+3. Start the development server:
 
-The search functionality:
+```bash
+npm start
+```
 
-![image](https://github.com/user-attachments/assets/2c73e3be-e553-4c1b-9373-ee496b372503)
+4. Open your browser and navigate to `http://localhost:3000` to see the app in action.
 
-The label search using priority:
+## **Usage:**
 
-![image](https://github.com/user-attachments/assets/fbc0d68d-d06c-4e6a-8f1c-f14802a6c172)
+- **Adding a Task**: 
+  - Enter task details (title, description, priority, due date) in the form and click "Add Task".
+  
+- **Editing a Task**: 
+  - Click the edit icon (✏️) to make changes to a task's title, description, priority, or due date.
+  
+- **Completing a Task**: 
+  - Mark a task as complete by clicking the checkbox. Completed tasks will be highlighted with a green background.
+  
+- **Deleting a Task**: 
+  - Click the delete icon (❌) to remove a task from the list.
 
+- **Search**: 
+  - Type in the search bar to filter tasks by their title or description. The searched task will smoothly transition to the center of the page.
+  
+- **Theme Toggle**: 
+  - Click the sun/moon icon to switch between light and dark themes. The background color and text will adjust accordingly.
 
+## **Screenshots:**
 
+### Light Theme:
+![Light Theme](link-to-screenshot-light-theme.png)
+
+### Dark Theme:
+![Dark Theme](link-to-screenshot-dark-theme.png)
+
+## **File Structure:**
+
+```bash
+├── src/
+│   ├── components/                # Reusable UI components
+│   │   ├── TodoForm.js            # Form for adding tasks
+│   │   ├── TodoItem.js            # Represents each task
+│   │   ├── Search.js              # Search functionality
+│   ├── context/                   # Context for state management
+│   │   └── TodoContext.js         # Context for managing tasks
+│   ├── App.js                     # Main App component
+│   ├── App.css                    # Global styles
+├── package.json                   # Project dependencies and scripts
+└── README.md                      # Project documentation
+```
+
+## **Contributing:**
+
+1. Fork this repository.
+2. Clone your forked repository.
+3. Create a new branch (`git checkout -b feature-name`).
+4. Make changes and commit them (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Create a pull request.
+
+## **License:**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## **Acknowledgments:**
+
+- React for providing a flexible UI framework.
+- React Icons for providing the sun/moon icons for theme switching.
+- Local Storage API for persisting tasks.
+
+---
+
+This `README.md` covers all the key details about your project, from features to installation instructions. You can further customize it by adding screenshots or links for a more comprehensive guide.
 
