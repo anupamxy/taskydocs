@@ -13,8 +13,9 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   - Add new tasks with a title, description, priority, and due date.
   - Edit or delete tasks as needed.
   - Tasks can be marked as completed, and their status can be updated.
+     ![Task Management](https://github.com/user-attachments/assets/922bf04f-7a14-4877-9de8-ac319a2fe4be)
   
-  ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d) ![image](https://github.com/user-attachments/assets/587fade5-edbd-4dc9-90d4-32abcfb0e70d)
+  ![image](https://github.com/user-attachments/assets/587fade5-edbd-4dc9-90d4-32abcfb0e70d)
 
 
   
@@ -25,12 +26,13 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   - Assign priority levels to each task (High, Medium, Low).
   
   ![Set Priorities](link-to-priority-image.png)  <!-- Add your image link here -->
-  ![Task Management](https://github.com/user-attachments/assets/922bf04f-7a14-4877-9de8-ac319a2fe4be)
+   ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d)
 
 - **Due Dates**: 
   - Assign due dates to tasks, and view tasks based on their due dates (Upcoming, Overdue, Completed).
   
   ![Due Dates](link-to-due-date-image.png)  <!-- Add your image link here -->
+   ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d)
 
 ### 2. **Search Functionality**:
 - **Search Tasks**: 
