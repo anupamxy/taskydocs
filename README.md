@@ -109,13 +109,7 @@ npm start
 - **Theme Toggle**: 
   - Click the sun/moon icon to switch between light and dark themes. The background color and text will adjust accordingly.
 
-## **Screenshots:**
 
-### Light Theme:
-![Light Theme](link-to-screenshot-light-theme.png)
-
-### Dark Theme:
-![Dark Theme](link-to-screenshot-dark-theme.png)
 
 ## **File Structure:**
 
