@@ -61,7 +61,7 @@
 ---
 
 ## **Tech Stack:**
-- **Frontend**: React, CSS
+- **Frontend**: React, CSS,Tailwid.css
 - **State Management**: Context API
 - **Icons**: React Icons.
 - **Local Storage**: Stores tasks locally on the user's device
