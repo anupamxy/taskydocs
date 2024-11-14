@@ -1,28 +1,51 @@
-Here’s a detailed `README.md` for your project, which is a **Task Manager App** that supports themes, search functionality, and task management features:
+Here's the updated `README.md` with placeholders for images for each feature. You can replace the placeholder links with the actual image URLs for each feature.
 
 ---
 
-# **Taskydoce - Task Manager App**
+# **Taskify - Task Manager App**
 
 **Taskify** is a task management application that helps you organize and keep track of your tasks. The app allows users to create, edit, delete, and complete tasks. It also features a search bar to filter tasks, theme switching (light/dark), and responsive design.
 
 ## **Features:**
-- **Task Management**:
-  - Add, edit, and delete tasks
-  - Mark tasks as completed or incomplete
-  - Set priorities for tasks (High, Medium, Low)
-  - Set due dates for tasks
-  - View tasks by status (Upcoming, Overdue, Completed)
-  
-- **Search Functionality**:
-  - Search tasks by title or description
-  - Highlight searched task with smooth transition animation
-  
-- **Theme Toggle**:
-  - Switch between light and dark themes with a sun/moon icon
 
-- **Responsive Design**:
-  - Fully responsive design that works on mobile, tablet, and desktop devices
+### 1. **Task Management**:
+- **Add, Edit, Delete Tasks**: 
+  - Add new tasks with a title, description, priority, and due date.
+  - Edit or delete tasks as needed.
+  - Tasks can be marked as completed, and their status can be updated.
+  
+  ![Task Management](link-to-task-management-image.png)  <!-- Add your image link here -->
+
+- **Set Priorities**: 
+  - Assign priority levels to each task (High, Medium, Low).
+  
+  ![Set Priorities](link-to-priority-image.png)  <!-- Add your image link here -->
+
+- **Due Dates**: 
+  - Assign due dates to tasks, and view tasks based on their due dates (Upcoming, Overdue, Completed).
+  
+  ![Due Dates](link-to-due-date-image.png)  <!-- Add your image link here -->
+
+### 2. **Search Functionality**:
+- **Search Tasks**: 
+  - Easily search through tasks by title or description.
+  - Searched tasks will smoothly transition to the center of the page for visibility.
+  
+  ![Search Functionality](link-to-search-feature-image.png)  <!-- Add your image link here -->
+
+### 3. **Theme Toggle**:
+- **Light and Dark Themes**: 
+  - Switch between light and dark themes using a sun/moon icon. The app's background color and text color will adjust accordingly.
+  
+  ![Theme Toggle](link-to-theme-toggle-image.png)  <!-- Add your image link here -->
+
+### 4. **Responsive Design**:
+- **Mobile, Tablet, and Desktop Friendly**: 
+  - The app adjusts seamlessly for different screen sizes, ensuring a great user experience across devices.
+  
+  ![Responsive Design](link-to-responsive-design-image.png)  <!-- Add your image link here -->
+
+---
 
 ## **Tech Stack:**
 - **Frontend**: React, CSS
@@ -99,13 +122,16 @@ npm start
 
 ## **Contributing:**
 
-1. Created my new repo
-2. Added readme and basic templeate feature
+1. Fork this repository.
+2. Clone your forked repository.
 3. Create a new branch (`git checkout -b feature-name`).
 4. Make changes and commit them (`git commit -am 'Add new feature'`).
 5. Push to the branch (`git push origin feature-name`).
 6. Create a pull request.
 
+## **License:**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## **Acknowledgments:**
 
@@ -115,5 +141,4 @@ npm start
 
 ---
 
-This `README.md` covers all the key details about your project, from features to installation instructions. You can further customize it by adding screenshots or links for a more comprehensive guide.
-
+With this updated `README.md`, you now have placeholders for images for each feature. Simply replace the `link-to-feature-image.png` placeholders with your actual image URLs.
