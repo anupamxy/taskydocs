@@ -16,9 +16,8 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   
   ![Task Management](https://github.com/user-attachments/assets/922bf04f-7a14-4877-9de8-ac319a2fe4be)
   (https://github.com/user-attachments/assets/c2c08dfd-fb60-4d2e-9ad7-ebb048570726)
-)
-)
-)  <!-- Add your image link here -->
+
+  <!-- Add your image link here -->
 
 - **Set Priorities**: 
   - Assign priority levels to each task (High, Medium, Low).
