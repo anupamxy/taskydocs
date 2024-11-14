@@ -1,6 +1,4 @@
-Here's the updated `README.md` with placeholders for images for each feature. You can replace the placeholder links with the actual image URLs for each feature.
 
----
 
 # **Taskydocs - Task Manager App**
 
@@ -14,8 +12,9 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
   - Edit or delete tasks as needed.
   - Tasks can be marked as completed, and their status can be updated.
      ![Task Management](https://github.com/user-attachments/assets/922bf04f-7a14-4877-9de8-ac319a2fe4be)
+    ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d)
   
-  ![image](https://github.com/user-attachments/assets/587fade5-edbd-4dc9-90d4-32abcfb0e70d)
+  
 
 
   
@@ -24,34 +23,40 @@ Here's the updated `README.md` with placeholders for images for each feature. Yo
 
 - **Set Priorities**: 
   - Assign priority levels to each task (High, Medium, Low).
+  - ![image](https://github.com/user-attachments/assets/587fade5-edbd-4dc9-90d4-32abcfb0e70d)
   
-  ![Set Priorities](link-to-priority-image.png)  <!-- Add your image link here -->
-   ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d)
+   <!-- Add your image link here -->
+   
 
 - **Due Dates**: 
   - Assign due dates to tasks, and view tasks based on their due dates (Upcoming, Overdue, Completed).
   
-  ![Due Dates](link-to-due-date-image.png)  <!-- Add your image link here -->
-   ![Task Management] ![image](https://github.com/user-attachments/assets/9f1a492a-ffa2-4833-9af7-77e12169ae5d)
+   <!-- Add your image link here -->
+  ![image](https://github.com/user-attachments/assets/eaddca91-aacd-4af7-96b8-5e317fb6d7f5)
+
 
 ### 2. **Search Functionality**:
 - **Search Tasks**: 
   - Easily search through tasks by title or description.
   - Searched tasks will smoothly transition to the center of the page for visibility.
   
-  ![Search Functionality](link-to-search-feature-image.png)  <!-- Add your image link here -->
+ 
+  ![image](https://github.com/user-attachments/assets/c01b7ec0-6564-4105-9d6c-58f0a034e7bf)
+
 
 ### 3. **Theme Toggle**:
 - **Light and Dark Themes**: 
   - Switch between light and dark themes using a sun/moon icon. The app's background color and text color will adjust accordingly.
   
-  ![Theme Toggle](link-to-theme-toggle-image.png)  <!-- Add your image link here -->
+![image](https://github.com/user-attachments/assets/4c18f58d-f9cb-4f2a-be46-72b798aa85a3)
+
 
 ### 4. **Responsive Design**:
 - **Mobile, Tablet, and Desktop Friendly**: 
   - The app adjusts seamlessly for different screen sizes, ensuring a great user experience across devices.
   
-  ![Responsive Design](link-to-responsive-design-image.png)  <!-- Add your image link here -->
+  ![image](https://github.com/user-attachments/assets/63cfd1d4-04f0-4775-a3b3-f819f9afaf2d)
+
 
 ---
 
