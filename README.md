@@ -2,7 +2,7 @@ Here’s a detailed `README.md` for your project, which is a **Task Manager App*
 
 ---
 
-# **Taskify - Task Manager App**
+# **Taskydoce - Task Manager App**
 
 **Taskify** is a task management application that helps you organize and keep track of your tasks. The app allows users to create, edit, delete, and complete tasks. It also features a search bar to filter tasks, theme switching (light/dark), and responsive design.
 
